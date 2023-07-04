@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1218</width>
+    <height>1330</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Taurus-yolo</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="1">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>分配任务</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="3">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>205</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>70</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="2" rowspan="2" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="2" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_carpeo"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_armpeo"/>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>车/装甲板人数比例</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_people">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>总人数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="2">
+          <widget class="QLineEdit" name="lineEdit_total"/>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QLineEdit" name="lineEdit_ratio"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>车/装甲板人员个数</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="4">
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>70</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="2">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>204</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="2" rowspan="2" colspan="2">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>5.6场地</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_56">
+           <property name="text">
+            <string>521</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>难度系数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLineEdit" name="lineEdit_56diff"/>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>车人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLineEdit" name="lineEdit_56carpeo"/>
+         </item>
+         <item row="0" column="6">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>装甲板人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="7">
+          <widget class="QLineEdit" name="lineEdit_56armpeo"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>联盟赛</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_league">
+           <property name="text">
+            <string>146</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>难度系数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="lineEdit_leaguediff"/>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>车人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="QLineEdit" name="lineEdit_leaguecarpeo"/>
+         </item>
+         <item row="1" column="6">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>装甲板人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="7">
+          <widget class="QLineEdit" name="lineEdit_leaguearmpeo"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>武科开源</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_wuke">
+           <property name="text">
+            <string>828</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>难度系数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="lineEdit_wukediff"/>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>车人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5">
+          <widget class="QLineEdit" name="lineEdit_wukecarpeo"/>
+         </item>
+         <item row="2" column="6">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>装甲板人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="7">
+          <widget class="QLineEdit" name="lineEdit_wukearmpeo"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>川大开源</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEdit_chuanda">
+           <property name="text">
+            <string>2507</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>难度系数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="lineEdit_chuandadiff"/>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>车人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="5">
+          <widget class="QLineEdit" name="lineEdit_chuandacarpeo"/>
+         </item>
+         <item row="3" column="6">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>装甲板人手</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="7">
+          <widget class="QLineEdit" name="lineEdit_chuandaarmpeo"/>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="4">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>70</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="1">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>69</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="6" column="3">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>205</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>148</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="2" rowspan="2" colspan="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pbsourceimg">
+             <property name="text">
+              <string>图片路径</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_sourceimg"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pbdstimg">
+             <property name="text">
+              <string>输出路径</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_dstimg"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pballocat">
+           <property name="text">
+            <string>开始分配！</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="4">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>70</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget">
+      <attribute name="title">
+       <string>检查</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="1,10">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_carlabelpath">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="pbreadlabelpath">
+             <property name="text">
+              <string>检查car</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>armorlabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_armorlabelpath">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="pbcheckarmor">
+             <property name="text">
+              <string>检查armor</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>carlabel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QSplitter" name="splitter">
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QTableWidget" name="tableWidget"/>
+           <widget class="QPlainTextEdit" name="plainTextEdit"/>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>剔除</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lePath">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>保留类别</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="leClass">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pbExecute">
+         <property name="text">
+          <string>开始执行</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>清洗</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_14">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_27">
+         <property name="text">
+          <string>打开目录，把待清洗的数据类型转换为目标类型</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0" colspan="2">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>txt路径</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_cleanPath"/>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_40">
+             <property name="text">
+              <string>指定文件范围</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_txtrange"/>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>待代清洗的class</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_cleantype">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>目标class</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_targetcleantype">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0" rowspan="2">
+          <widget class="QPushButton" name="pbClean">
+           <property name="text">
+            <string>开始清洗</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>33</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="0">
+        <layout class="QGridLayout" name="gridLayout_12">
+         <item row="0" column="0" colspan="3">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>选择性保留标签（class用英文逗号隔开），其他class删掉</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_32">
+           <property name="text">
+            <string>txt路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QLineEdit" name="lineEdit_retainTXTPath"/>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QLabel" name="label_33">
+           <property name="text">
+            <string>需要保留的class</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="lineEdit_ratainClass">
+           <property name="text">
+            <string>1,2,3,4,5,10,11,12,13,14</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QPushButton" name="pb_retainDele">
+           <property name="text">
+            <string>删除多余class</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <spacer name="horizontalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="0">
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>33</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="0">
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="0" column="0" colspan="4">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>检查txt文件是否为空,需要删除对应txt和img</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>txt路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="3">
+          <widget class="QLineEdit" name="lineEdit_checkNull_TXTPath"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>img路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="3">
+          <widget class="QLineEdit" name="lineEdit_checkNull_IMGPath"/>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QPushButton" name="pbCheckNull">
+           <property name="text">
+            <string>检查并删除</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="0">
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>33</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="0">
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="0" column="0" colspan="3">
+          <widget class="QLabel" name="label_34">
+           <property name="text">
+            <string>检查txt与img的对应关系，多余的删掉</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="text">
+            <string>txt路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QLineEdit" name="lineEdit_excessTXTPath"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="text">
+            <string>img路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="2">
+          <widget class="QLineEdit" name="lineEdit_excessIMGPath"/>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QPushButton" name="pb_DeleExcessFile">
+           <property name="text">
+            <string>删除多余文件</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <spacer name="horizontalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="0">
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>33</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>重排</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_16">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_15">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_37">
+           <property name="text">
+            <string>起始编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_sort_startnum"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_38">
+           <property name="text">
+            <string>待排txt文件夹路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_sort_txtpath"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_39">
+           <property name="text">
+            <string>待排img文件夹路径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_sort_imgpath"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pb_startrenamesort">
+           <property name="text">
+            <string>开始重排</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <spacer name="horizontalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <spacer name="verticalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>493</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_total</tabstop>
+  <tabstop>lineEdit_ratio</tabstop>
+  <tabstop>lineEdit_56diff</tabstop>
+  <tabstop>lineEdit_leaguediff</tabstop>
+  <tabstop>lineEdit_wukediff</tabstop>
+  <tabstop>lineEdit_chuandadiff</tabstop>
+  <tabstop>lineEdit_league</tabstop>
+  <tabstop>lineEdit_56carpeo</tabstop>
+  <tabstop>lineEdit_leaguecarpeo</tabstop>
+  <tabstop>lineEdit_wuke</tabstop>
+  <tabstop>lineEdit_wukecarpeo</tabstop>
+  <tabstop>lineEdit_chuanda</tabstop>
+  <tabstop>pballocat</tabstop>
+  <tabstop>lineEdit_chuandacarpeo</tabstop>
+  <tabstop>pbsourceimg</tabstop>
+  <tabstop>lineEdit_sourceimg</tabstop>
+  <tabstop>pbdstimg</tabstop>
+  <tabstop>lineEdit_dstimg</tabstop>
+  <tabstop>lineEdit_56</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
